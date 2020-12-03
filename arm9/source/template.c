@@ -7,6 +7,7 @@
 #include <nds.h>
 #include <fat.h>
 #include <stdio.h>
+#include <string.h>
 
 u32 getCP15Ctrl();
 void disableMPU();
@@ -16,8 +17,6 @@ u8 workBuffer[0x10000];
 //---------------------------------------------------------------------------------
 int main(void) {
 //---------------------------------------------------------------------------------
-	touchPosition touch;
-	
 	DC_FlushAll();
 	disableMPU();
 
