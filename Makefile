@@ -13,9 +13,9 @@ export TOPDIR	:=	$(CURDIR)
 NITRO_FILES	:=
 
 # These set the information text in the nds file
-#GAME_TITLE     := My Wonderful Homebrew
-#GAME_SUBTITLE1 := built with devkitARM
-#GAME_SUBTITLE2 := http://devitpro.org
+GAME_TITLE     := dsibiosdumper
+GAME_SUBTITLE1 := A tool for dumping the DSi BIOS
+GAME_SUBTITLE2 := For use with melonDS or no$$gba
 
 include $(DEVKITARM)/ds_rules
 
