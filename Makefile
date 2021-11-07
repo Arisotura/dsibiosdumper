@@ -13,7 +13,7 @@ export TOPDIR	:=	$(CURDIR)
 NITRO_FILES	:=
 
 # These set the information text in the nds file
-GAME_TITLE     := dsibiosdumper
+GAME_TITLE     := DSi_dumper
 GAME_SUBTITLE1 := DSi BIOS/NAND/firmware dumper
 GAME_SUBTITLE2 := For use with melonDS or no$$gba
 
