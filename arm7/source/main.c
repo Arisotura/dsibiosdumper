@@ -293,10 +293,10 @@ int main()
 					*(u32*)&workBuffer[0x001C] = 0xEA000000;
 					
 					biosDump(&workBuffer[0x0020], (const void*)0x00000020, 0x7FE0);
-					memcpy(&workBuffer[0x8188], (const void*)0x03FFC400, 0x200);
-					memcpy(&workBuffer[0xB5D8], (const void*)0x03FFC600, 0x40);
-					memcpy(&workBuffer[0xC6D0], (const void*)0x03FFC654, 0x1048);
-					memcpy(&workBuffer[0xD718], (const void*)0x03FFD69C, 0x1048);
+					memcpy(&workBuffer[0x8188], &biosKeys[0x0400], 0x200);
+					memcpy(&workBuffer[0xB5D8], &biosKeys[0x0600], 0x40);
+					memcpy(&workBuffer[0xC6D0], &biosKeys[0x0654], 0x1048);
+					memcpy(&workBuffer[0xD718], &biosKeys[0x169C], 0x1048);
 					
 					fifoSendValue32(FIFO_USER_01, 1312);
 				}
